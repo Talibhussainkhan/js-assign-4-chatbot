@@ -1,0 +1,162 @@
+@font-face {
+    font-family: "poppins";
+    src: url(./Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    padding: 1rem 1rem;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10rem;
+}
+#header-btn{
+    border: none;
+    color: white;
+    background: #000;
+    width:  25%;
+    padding: 0.5rem ;
+    
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s linear;
+    &:hover{
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+}
+.hearder-btn-div{
+    /* background-color: red; */
+    width: 50%;
+    text-align: right;
+}
+.header-heading{
+    font-size: 1.5rem;
+    font-family: "poppins";   
+}
+#message{
+    width: 50%;
+    height: 80vh;
+    overflow-x: auto;
+    margin: auto;
+    padding: 2rem ;
+    background: rgb(226, 220, 220);
+    display: flex;
+    flex-direction: column;
+}
+#message > li{
+    list-style: none;
+    /* flex-direction: column; */
+}
+.user-message{
+    font-size: 1.5rem;
+    font-family: "poppins";
+}
+.user-message>p{
+    background: #79767669;
+    padding: 0 1rem;
+    border-radius: 5px;
+    display: flex;
+    display: inline-block;
+}
+.bot-message{
+    font-size: 1.2rem;
+    padding-left: 5rem;
+    color: #1c1c1c;
+    font-family: "poppins";
+}
+.input{
+    width: 50%;
+    margin: auto;
+    margin-top: 1rem;
+}
+#input{
+    width: 84%;
+    border: none;
+    outline: none;
+    border: 1px solid #797676;
+    border-radius: 20px ;
+    padding: 0.5rem;
+    font-size: 1rem;
+    padding-left: 2rem;
+}
+.btn{
+    border: none;
+    color: white;
+    background: #000;
+    width: 15%;
+    padding: 0.5rem ;
+    border-radius: 20px;
+    cursor: pointer;
+    &:hover{
+        opacity: 0.9;
+        transform: translateY(-2px);
+    }
+}
+@media (min-width:1440px) {
+    #message{
+        height: 85vh;
+    }
+    header{
+        padding-right: 2rem;
+        padding-left: 1.5rem;
+    }
+    #header-btn{
+        padding: 0.8rem;
+    }
+}
+@media (max-width:768px) {
+    header{
+       padding: 0.5rem; 
+    }
+    #header-btn{
+        width: 40%;
+    }
+    #input{
+        width: 83%;
+    }
+}
+@media (max-width:425px) {
+    #message{
+        margin-top: 0.8rem;
+        width: 90%;
+    }
+    header{
+        padding:  0.5rem;
+        align-items: center;
+    }
+    .header-heading{
+        font-size: 1rem;
+    }
+    .hearder-btn-div{
+        flex: 1;
+    }
+    #header-btn{
+        font-size: 10px;
+        width:  40%;
+        padding: 0.4rem ;
+        border-radius: 20px;
+    }
+    .input{
+        width: 94%;
+    }
+}
+@media (max-width:375px) {
+    #input{
+        padding-left: 1rem;
+        font-size: 0.8rem;
+    }
+    #message{
+        padding: 16px;
+    }
+    .user-message{
+        font-size: 0.7rem;
+    }
+    .bot-message{
+        font-size: 1rem;
+    }
+}
